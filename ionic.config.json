@@ -1,0 +1,7 @@
+{
+  "name": "pouletfarmmobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
