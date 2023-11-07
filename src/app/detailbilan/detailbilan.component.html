@@ -1,16 +1,16 @@
 
 
 <div id="container" style="display: grid; " class="head animate__animated animate__fadeInDown ">
-  <ion-icon name="arrow-undo" style="display: block; font-size: 25px; padding: 15px  15px 0  15px; color: #fff;" [routerLink]="['../poussin']"></ion-icon>
+  <ion-icon name="arrow-undo" style="display: block; font-size: 25px; padding: 15px  15px 0  15px; color: #fff;" [routerLink]="['../bilan']"></ion-icon>
   <div class="img" style="box-sizing: border-box;">
-    <img src="../../assets/bilan.png" alt="" width="150px" height="170px">
+    <img src="../../assets/bilan.png" alt="" width="100px" height="80px" >
     <p style="margin-right: 0px; color: #fff;"> <strong>Bilan 1</strong></p>
   </div>
-</div> 
+</div>
 <!-- <ion-label style=" margin-left: 20px ; margin-top: 10px"><strong></strong></ion-label> -->
  <div class="icon_nombre">
   <ion-searchbar slot="end" ></ion-searchbar>
-<ion-button [routerLink]="['../modifierradio']" ><ion-icon name="add-circle-outline" style="font-size: 30px;"></ion-icon></ion-button> 
+<ion-button [routerLink]="['../ajouttachebilan']" ><ion-icon name="add-circle-outline" style="font-size: 30px;"></ion-icon></ion-button>
 </div>
 
 
@@ -27,7 +27,7 @@
           <ion-label style="cursor: pointer;" [routerLink]="['../detailtache']">Poussin</ion-label>
           <div class="iconitem">
           <!-- <ion-label>{{element.frequence}} HZ </ion-label> -->
-          <ion-icon name="create-outline" style="color: #005B2F; cursor: pointer; " [routerLink]="['../modifierentree']"></ion-icon>
+          <ion-icon name="create-outline" style="color: #005B2F; cursor: pointer; " [routerLink]="['../modifiertachebilantache']"></ion-icon>
           <!-- <ion-icon name="trash" style="color: red;"   id="present-alert" (click)="presentAlert(element.id)" ></ion-icon> -->
           <ion-icon name="trash" style="color: red;cursor: pointer;"></ion-icon>
           </div>
@@ -95,12 +95,11 @@
             id="myAlert"
             ></ion-alert> -->
         </ion-item>
-  
-        
+
+
       </ion-list>
     </ion-card-content>
   </ion-card>
 </div>
-  
+
 </ion-content>
-  

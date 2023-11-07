@@ -14,6 +14,11 @@ import { GestionComponent } from '../gestion/gestion.component';
 import { DetailbilanComponent } from '../detailbilan/detailbilan.component';
 import { DetailtacheComponent } from '../detailtache/detailtache.component';
 import { ModifierentreeComponent } from '../modifierentree/modifierentree.component';
+import { AjoutentreeComponent } from '../ajoutentree/ajoutentree.component';
+import { ModifiertachebilanComponent } from '../modifiertachebilan/modifiertachebilan.component';
+import { AjoutbilanComponent } from '../ajoutbilan/ajoutbilan.component';
+import { AjouttachebilanComponent } from '../ajouttachebilan/ajouttachebilan.component';
+import { ModifiertachebilantacheComponent } from '../modifiertachebilantache/modifiertachebilantache.component';
 
 @NgModule({
   imports: [
@@ -23,6 +28,7 @@ import { ModifierentreeComponent } from '../modifierentree/modifierentree.compon
     Tab1PageRoutingModule
   ],
   declarations: [Tab1Page,HomeComponent,PoussinComponent,DetailComponent,BilanComponent,GestionComponent,DetailbilanComponent,
-  DetailtacheComponent,ModifierentreeComponent]
+  DetailtacheComponent,ModifierentreeComponent,AjoutentreeComponent,ModifiertachebilanComponent,
+AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent]
 })
 export class Tab1PageModule {}

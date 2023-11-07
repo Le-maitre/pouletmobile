@@ -15,6 +15,11 @@ import { RapportComponent } from '../rapport/rapport.component';
 import { DetailbilanComponent } from '../detailbilan/detailbilan.component';
 import { DetailtacheComponent } from '../detailtache/detailtache.component';
 import { ModifierentreeComponent } from '../modifierentree/modifierentree.component';
+import { AjoutentreeComponent } from '../ajoutentree/ajoutentree.component';
+import { ModifiertachebilanComponent } from '../modifiertachebilan/modifiertachebilan.component';
+import { AjoutbilanComponent } from '../ajoutbilan/ajoutbilan.component';
+import { AjouttachebilanComponent } from '../ajouttachebilan/ajouttachebilan.component';
+import { ModifiertachebilantacheComponent } from '../modifiertachebilantache/modifiertachebilantache.component';
 
 const routes: Routes = [
   {
@@ -54,8 +59,28 @@ const routes: Routes = [
     component: ForumComponent,
   },
   {
+    path: 'modifiertachebilantache',
+    component: ModifiertachebilantacheComponent
+  },
+  {
+    path: 'ajouttachebilan',
+    component: AjouttachebilanComponent,
+  },
+  {
     path: 'calendrier',
     component: CalendrierComponent,
+  },
+  {
+    path: 'ajoutbilan',
+    component: AjoutbilanComponent,
+  },
+  {
+    path: 'ajoutentree',
+    component: AjoutentreeComponent,
+  },
+  {
+    path: 'modifiertachebilan',
+    component: ModifiertachebilanComponent,
   },
   {
     path: 'detailtache',

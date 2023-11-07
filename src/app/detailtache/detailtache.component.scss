@@ -1,16 +1,16 @@
 #container{
     display: grid;
-    background-color: orange;
+    background-color: rgb(0, 255, 128);
     border-radius: 0 0 80px 0;
 }
 .iconitem{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px; 
+    gap: 5px;
 }
 .iconitem {
     font-size: 20px !important;
-    
+
 }
 .img img{
     margin-left: 20px;
@@ -20,7 +20,7 @@
     grid-template-columns: repeat(2, 1fr);
     margin-left: 10px !important;
     margin-right: 10px !important;
-    
+
 }
 #card{
     display: grid;
@@ -34,7 +34,7 @@
     align-items: center !important;
     text-align: center;
 }
-.img img{  
+.img img{
     display: grid !important;
     align-items: center;
     // margin-left: 40px;
@@ -48,24 +48,24 @@
 .icon_nombre{
     display: flex;
     margin: 20px 20px 0 20px;
-   
+
 }
 ion-button {
     --background: #fff;
-  
-  
+
+
     --color: #005B2F;
 
-  
+
     --border-radius: 25px;
     --border-color: #000;
     // --border-style: solid;
     // --border-width: 1px;
-  
+
     // --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
-  
+
     // --ripple-color: deeppink;
-  
+
     // --padding-top: -10px;
     // --padding-bottom: -10px;
   }
