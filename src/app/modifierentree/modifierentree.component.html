@@ -1,0 +1,54 @@
+<div id="container" style="display: grid; " class="head animate__animated animate__fadeInDown ">
+  <ion-icon name="arrow-undo" style="display: block; font-size: 25px; padding: 15px 15px 0 15px; color: #fff;" [routerLink]="['../poussin']"></ion-icon>
+  <div class="img" style="box-sizing: border-box;">
+    <img src="../../assets/poussins.png" alt="" width="120px" height="120px">
+    <p style="margin-right: 20px; color: #fff;"> <strong>Lot 1</strong></p>
+  </div>
+</div>
+
+<ion-content class="animate__animated animate__fadeInUp">
+
+  <ion-card style="border-radius: 25px; background-color: gray; color: black;">
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content style="text-align: center; justify-content: center; ">
+      <ion-label style="font-size: 20px; font-weight: bold;"><strong>Nom:</strong> Lot 1</ion-label> <br>
+      <ion-label style="font-size: 20px; font-weight: bold;"><strong>Nombre de Poussins:</strong> 750</ion-label> <br>
+      <ion-label style="font-size: 20px; font-weight: bold;"><strong>Date d'Entrée:</strong> 25/11/2023</ion-label><br>
+      <ion-label style="font-size: 20px; font-weight: bold;"><strong>Date de Sortie:</strong> 31/12/2023</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Nouveau contenu pour la modification -->
+  <ion-card style="border-radius: 25px; background-color: gray; color: black;">
+    <ion-card-header>
+      <ion-label style="font-size: 20px; font-weight: bold;">Modifier</ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Ajoutez les champs de modification ici -->
+      <ion-item>
+        <ion-label position="floating">Nouveau Nom</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nouveau Nombre de Poussins</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nouvelle Date d'Entrée</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nouvelle Date de Sortie</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Bouton de sauvegarde pour la modification -->
+  <ion-button expand="full" color="success">Enregistrer</ion-button>
+
+</ion-content>

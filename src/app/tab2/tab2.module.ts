@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { HomeComponent } from '../home/home.component';
+import { EntreeComponent } from '../entree/entree.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { HomeComponent } from '../home/home.component';
     Tab2PageRoutingModule,
 
   ],
-  declarations: [Tab2Page, HomeComponent]
+  declarations: [Tab2Page]
 })
 export class Tab2PageModule {}
