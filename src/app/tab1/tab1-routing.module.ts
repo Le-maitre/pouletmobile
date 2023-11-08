@@ -28,6 +28,17 @@ import { AlimentComponent } from '../aliment/aliment.component';
 import { StockComponent } from '../stock/stock.component';
 import { VitamineComponent } from '../vitamine/vitamine.component';
 import { MortComponent } from '../mort/mort.component';
+import { DetailalimentComponent } from '../detailaliment/detailaliment.component';
+import { AjoutalimenttComponent } from '../ajoutalimentt/ajoutalimentt.component';
+import { ModifieralimenttComponent } from '../modifieralimentt/modifieralimentt.component';
+import { DetailvitamineComponent } from '../detailvitamine/detailvitamine.component';
+import { AjoutvitamineComponent } from '../ajoutvitamine/ajoutvitamine.component';
+import { ModifiervitamineComponent } from '../modifiervitamine/modifiervitamine.component';
+import { DetailmortComponent } from '../detailmort/detailmort.component';
+import { AjoutmortComponent } from '../ajoutmort/ajoutmort.component';
+import { ModifiermortComponent } from '../modifiermort/modifiermort.component';
+import { DetailalerteComponent } from '../detailalerte/detailalerte.component';
+import { DemarrageComponent } from '../demarrage/demarrage.component';
 
 const routes: Routes = [
   {
@@ -69,6 +80,46 @@ const routes: Routes = [
   {
     path: 'detailvaccin',
     component: DetailvaccinComponent,
+  },
+  {
+    path: 'detailvitamine',
+    component: DetailvitamineComponent,
+  },
+  {
+    path: 'detailmort',
+    component: DetailmortComponent
+  },
+  {
+    path: 'detailalerte',
+    component: DetailalerteComponent,
+  },
+  {
+    path: 'ajoutmort',
+    component: AjoutmortComponent
+  },
+  {
+    path: 'modifiermort',
+    component: ModifiermortComponent,
+  },
+  {
+    path: 'ajoutvitamine',
+    component: AjoutvitamineComponent,
+  },
+  {
+    path: 'modifiervitamine',
+    component: ModifiervitamineComponent,
+  },
+  {
+    path: 'detailaliment',
+    component: DetailalimentComponent
+  },
+  {
+    path: 'ajoutaliment',
+    component: AjoutalimenttComponent
+  },
+  {
+    path: 'modifieraliment',
+    component: ModifieralimenttComponent,
   },
   {
     path: 'ajoutvaccin',
@@ -133,6 +184,10 @@ const routes: Routes = [
   {
     path: 'alerte',
     component: AlerteComponent,
+  },
+  {
+    path: 'demarrage',
+    component: DemarrageComponent,
   },
   {
     path: 'guide',

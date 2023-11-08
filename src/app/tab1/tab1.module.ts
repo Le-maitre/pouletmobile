@@ -27,6 +27,19 @@ import { AlimentComponent } from '../aliment/aliment.component';
 import { StockComponent } from '../stock/stock.component';
 import { VitamineComponent } from '../vitamine/vitamine.component';
 import { MortComponent } from '../mort/mort.component';
+import { DetailalimentComponent } from '../detailaliment/detailaliment.component';
+import { AjoutalimenttComponent } from '../ajoutalimentt/ajoutalimentt.component';
+import { ModifieralimenttComponent } from '../modifieralimentt/modifieralimentt.component';
+import { AjoutvitamineComponent } from '../ajoutvitamine/ajoutvitamine.component';
+import { DetailvitamineComponent } from '../detailvitamine/detailvitamine.component';
+import { ModifiervitamineComponent } from '../modifiervitamine/modifiervitamine.component';
+import { DetailmortComponent } from '../detailmort/detailmort.component';
+import { AjoutmortComponent } from '../ajoutmort/ajoutmort.component';
+import { ModifiermortComponent } from '../modifiermort/modifiermort.component';
+import { AlerteComponent } from '../alerte/alerte.component';
+import { DetailalerteComponent } from '../detailalerte/detailalerte.component';
+import { GuideComponent } from '../guide/guide.component';
+import { DemarrageComponent } from '../demarrage/demarrage.component';
 
 @NgModule({
   imports: [
@@ -37,7 +50,8 @@ import { MortComponent } from '../mort/mort.component';
   ],
   declarations: [Tab1Page,HomeComponent,PoussinComponent,DetailComponent,BilanComponent,GestionComponent,DetailbilanComponent,
   DetailtacheComponent,ModifierentreeComponent,AjoutentreeComponent,ModifiertachebilanComponent,VaccinComponent,DetailvaccinComponent,AjoutvaccinComponent,ModifiervaccinComponent,AlimentComponent,StockComponent,VitamineComponent,MortComponent,
-AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent,
+AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent,DetailalimentComponent,AjoutalimenttComponent,ModifieralimenttComponent,AjoutvitamineComponent,DetailvitamineComponent,ModifiervitamineComponent,
+DetailmortComponent,AjoutmortComponent,ModifiermortComponent,AlerteComponent,DetailalerteComponent,GuideComponent,DemarrageComponent
 ]
 })
 export class Tab1PageModule {}
