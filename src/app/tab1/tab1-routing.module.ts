@@ -20,6 +20,14 @@ import { ModifiertachebilanComponent } from '../modifiertachebilan/modifiertache
 import { AjoutbilanComponent } from '../ajoutbilan/ajoutbilan.component';
 import { AjouttachebilanComponent } from '../ajouttachebilan/ajouttachebilan.component';
 import { ModifiertachebilantacheComponent } from '../modifiertachebilantache/modifiertachebilantache.component';
+import { VaccinComponent } from '../vaccin/vaccin.component';
+import { DetailvaccinComponent } from '../detailvaccin/detailvaccin.component';
+import { AjoutvaccinComponent } from '../ajoutvaccin/ajoutvaccin.component';
+import { ModifiervaccinComponent } from '../modifiervaccin/modifiervaccin.component';
+import { AlimentComponent } from '../aliment/aliment.component';
+import { StockComponent } from '../stock/stock.component';
+import { VitamineComponent } from '../vitamine/vitamine.component';
+import { MortComponent } from '../mort/mort.component';
 
 const routes: Routes = [
   {
@@ -53,6 +61,38 @@ const routes: Routes = [
   {
     path: 'rapport',
     component: RapportComponent,
+  },
+  {
+    path: 'vaccin',
+    component: VaccinComponent,
+  },
+  {
+    path: 'detailvaccin',
+    component: DetailvaccinComponent,
+  },
+  {
+    path: 'ajoutvaccin',
+    component: AjoutvaccinComponent,
+  },
+  {
+    path: 'modifiervaccin',
+    component: ModifiervaccinComponent,
+  },
+  {
+    path: 'aliment',
+    component: AlimentComponent,
+  },
+  {
+    path: 'stock',
+    component: StockComponent,
+  },
+  {
+    path: 'vitamine',
+    component: VitamineComponent,
+  },
+  {
+    path: 'mort',
+    component: MortComponent,
   },
   {
     path: 'forum',

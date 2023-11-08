@@ -19,6 +19,14 @@ import { ModifiertachebilanComponent } from '../modifiertachebilan/modifiertache
 import { AjoutbilanComponent } from '../ajoutbilan/ajoutbilan.component';
 import { AjouttachebilanComponent } from '../ajouttachebilan/ajouttachebilan.component';
 import { ModifiertachebilantacheComponent } from '../modifiertachebilantache/modifiertachebilantache.component';
+import { VaccinComponent } from '../vaccin/vaccin.component';
+import { DetailvaccinComponent } from '../detailvaccin/detailvaccin.component';
+import { AjoutvaccinComponent } from '../ajoutvaccin/ajoutvaccin.component';
+import { ModifiervaccinComponent } from '../modifiervaccin/modifiervaccin.component';
+import { AlimentComponent } from '../aliment/aliment.component';
+import { StockComponent } from '../stock/stock.component';
+import { VitamineComponent } from '../vitamine/vitamine.component';
+import { MortComponent } from '../mort/mort.component';
 
 @NgModule({
   imports: [
@@ -28,7 +36,8 @@ import { ModifiertachebilantacheComponent } from '../modifiertachebilantache/mod
     Tab1PageRoutingModule
   ],
   declarations: [Tab1Page,HomeComponent,PoussinComponent,DetailComponent,BilanComponent,GestionComponent,DetailbilanComponent,
-  DetailtacheComponent,ModifierentreeComponent,AjoutentreeComponent,ModifiertachebilanComponent,
-AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent]
+  DetailtacheComponent,ModifierentreeComponent,AjoutentreeComponent,ModifiertachebilanComponent,VaccinComponent,DetailvaccinComponent,AjoutvaccinComponent,ModifiervaccinComponent,AlimentComponent,StockComponent,VitamineComponent,MortComponent,
+AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent,
+]
 })
 export class Tab1PageModule {}
