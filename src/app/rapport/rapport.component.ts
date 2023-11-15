@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-rapport',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RapportComponent  implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {}
+  investedAmount: number = 5000;
+  deadChicks: number = 10;
+  realizedProfit: number = 2000;
 
+  constructor() {}
+
+  ngOnInit() {
+  }
+  
+ 
 }

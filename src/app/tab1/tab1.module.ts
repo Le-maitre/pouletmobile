@@ -40,9 +40,15 @@ import { AlerteComponent } from '../alerte/alerte.component';
 import { DetailalerteComponent } from '../detailalerte/detailalerte.component';
 import { GuideComponent } from '../guide/guide.component';
 import { DemarrageComponent } from '../demarrage/demarrage.component';
+import { CalendrierComponent } from '../calendrier/calendrier.component';
+import { NgCalendarModule  } from 'ionic2-calendar';
+import { CalendarModule } from 'angular-calendar';
+import { ForumComponent } from '../forum/forum.component';
+import { RapportComponent } from '../rapport/rapport.component';
 
 @NgModule({
   imports: [
+    NgCalendarModule,
     IonicModule,
     CommonModule,
     FormsModule,
@@ -51,7 +57,7 @@ import { DemarrageComponent } from '../demarrage/demarrage.component';
   declarations: [Tab1Page,HomeComponent,PoussinComponent,DetailComponent,BilanComponent,GestionComponent,DetailbilanComponent,
   DetailtacheComponent,ModifierentreeComponent,AjoutentreeComponent,ModifiertachebilanComponent,VaccinComponent,DetailvaccinComponent,AjoutvaccinComponent,ModifiervaccinComponent,AlimentComponent,StockComponent,VitamineComponent,MortComponent,
 AjoutbilanComponent,AjouttachebilanComponent,ModifiertachebilantacheComponent,DetailalimentComponent,AjoutalimenttComponent,ModifieralimenttComponent,AjoutvitamineComponent,DetailvitamineComponent,ModifiervitamineComponent,
-DetailmortComponent,AjoutmortComponent,ModifiermortComponent,AlerteComponent,DetailalerteComponent,GuideComponent,DemarrageComponent
+DetailmortComponent,AjoutmortComponent,ModifiermortComponent,AlerteComponent,DetailalerteComponent,GuideComponent,DemarrageComponent, ForumComponent, RapportComponent
 ]
 })
 export class Tab1PageModule {}
