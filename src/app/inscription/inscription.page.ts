@@ -45,7 +45,7 @@ export class InscriptionPage implements OnInit {
           console.log('User created:', response);
 
           // Redirect to the home page upon successful registration
-          this.router.navigate(['/Acueil']); // Replace 'Acueil' with the appropriate path to your home page
+          this.router.navigate(['Accueil']); // Replace 'Acueil' with the appropriate path to your home page
         },
         (error) => {
           // Handle errors if the request fails
