@@ -7,11 +7,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:8080/api/users'; // Replace with your Spring Boot API URL
+  private baseUrl = 'http://localhost:8080/api/users'; // Replace with your Spring Boot backend URL
 
   constructor(private http: HttpClient) { }
 
-  registerUser(user: User): Observable<User> {
-    return this.http.post<User>(`${this.apiUrl}/create`, user);
-  }
+
+    
+    createUser(userData: any): Observable<any> {
+        return this.http.post<any>(`${this.baseUrl}/create`, userData);
+      }
 }

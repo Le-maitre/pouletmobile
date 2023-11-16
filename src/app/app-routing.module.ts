@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./inscription/inscription.module').then(m => m.InscriptionPageModule)
   },
   {
     path: 'Acueil',
@@ -12,14 +12,15 @@ const routes: Routes = [
   },
   {
     path: 'connexion',
-    loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+    loadChildren: () => import('./connexion/connexion.module').then(m => m.ConnexionPageModule)
   },
   {
     path: 'inscription',
-    loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
-  }
-
+    loadChildren: () => import('./inscription/inscription.module').then(m => m.InscriptionPageModule)
+  },
+  // Add child routes or other route configurations as needed
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
