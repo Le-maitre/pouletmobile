@@ -4,10 +4,25 @@ import { TabsPageModule } from './tabs/tabs.module';
 import { Tab1Page } from './tab1/tab1.page';
 import { TabsPage } from './tabs/tabs.page';
 import { HomeComponent } from './home/home.component';
+import { EntreeComponent } from './entree/entree.component';
 
 const routes: Routes = [
+
   {
     path: '',
+    loadChildren: () => import('./connexion/connexion.module').then(m => m.ConnexionPageModule)
+  },
+  
+  {
+    path: 'connexion',
+    loadChildren: () => import('./connexion/connexion.module').then(m => m.ConnexionPageModule)
+  },
+  {
+    path: 'Accueil',
+    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
+  {
+    path: 'inscription',
     loadChildren: () => import('./inscription/inscription.module').then(m => m.InscriptionPageModule)
   },
   {
@@ -16,25 +31,14 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        component: HomeComponent,
+        loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
       },
-      // Define other child routes of 'tabs' if needed
-      // ...
-    ],
+      {
+        path: 'tab2',
+        loadChildren: () => import('./tab2/tab2.module').then(m => m.Tab2PageModule)
+      },
+    ]
   },
-  {
-    path: 'Accueil',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
-    path: 'connexion',
-    loadChildren: () => import('./connexion/connexion.module').then(m => m.ConnexionPageModule)
-  },
-  {
-    path: 'inscription',
-    loadChildren: () => import('./inscription/inscription.module').then(m => m.InscriptionPageModule)
-  },
-  // Add child routes or other route configurations as needed
 ];
 
 @NgModule({

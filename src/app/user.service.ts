@@ -11,9 +11,13 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-
+  loginUser(user: { email: string, password: string }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/login`, user);
+  }
     
     createUser(userData: any): Observable<any> {
         return this.http.post<any>(`${this.baseUrl}/create`, userData);
       }
+
+    
 }

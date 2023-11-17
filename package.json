@@ -30,6 +30,7 @@
     "@stencil/core": "^4.7.1",
     "angular-calendar": "^0.31.0",
     "chart.js": "^4.4.0",
+    "cors": "^2.8.5",
     "date-fns": "^2.30.0",
     "ionic2-calendar": "^2.1.0",
     "ionicons": "^7.0.0",

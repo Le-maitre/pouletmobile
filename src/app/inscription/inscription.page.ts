@@ -19,7 +19,6 @@ export class InscriptionPage implements OnInit {
 
   constructor(private http: HttpClient,private alertController: AlertController, private router: Router) {}
   ngOnInit(): void {}
-
   async onSubmit() {
     // Check if passwords match
     if (this.userData.password !== this.userData.rmdp) {
@@ -45,7 +44,7 @@ export class InscriptionPage implements OnInit {
           console.log('User created:', response);
 
           // Redirect to the home page upon successful registration
-          this.router.navigate(['Accueil']); // Replace 'Acueil' with the appropriate path to your home page
+          this.router.navigate(['/tabs/tab1']); // Replace 'Acueil' with the appropriate path to your home page
         },
         (error) => {
           // Handle errors if the request fails

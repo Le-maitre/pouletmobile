@@ -50,6 +50,10 @@ const routes: Routes = [
     component: EntreeComponent,
   },
   {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
     path: 'poussin',
     component: PoussinComponent,
   },

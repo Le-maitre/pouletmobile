@@ -18,7 +18,6 @@ export class ForumComponent  implements OnInit {
 
   constructor(private alertController: AlertController) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
   // Method to show options menu
