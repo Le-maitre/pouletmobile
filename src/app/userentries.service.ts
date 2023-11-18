@@ -15,4 +15,13 @@ export class UserentriesService {
     const url = `${this.apiUrl}/api/users/${userId}/entrees/all`;
     return this.http.get<any[]>(url);
   }
+
+    // Method to delete an entry by its ID for a specific user
+    deleteEntry(userId: number, entryId: number): Observable<any> {
+      const url = `${this.apiUrl}/api/users/${userId}/entrees/${entryId}`;
+      return this.http.delete<any>(url);
+    }
+    addEntry(userId: number, entryData: any) {
+      return this.http.post(`http://localhost:8080/api/users/${userId}/entrees/create`, entryData);
+    }
 }

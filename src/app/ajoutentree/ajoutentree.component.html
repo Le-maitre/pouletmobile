@@ -8,30 +8,32 @@
 
 <ion-content>
 
-  <form >
+  <form (ngSubmit)="addEntry()">
     <div class="main">
-    <div  class="input-item">
-      <ion-label class="label">Nom</ion-label>
-      <input class="input" type="text" placeholder=""/>
-    </div >
-
-    <div  class="input-item">
-      <ion-label class="label">Nombre de Poussins</ion-label>
-      <input class="input" type="text" placeholder=""/>
-    </div >
-
-    <div class="input-item">
-      <ion-label class="label">Date d'Entrée</ion-label>
-      <input class="input" type="date" placeholder=""/>
+      <div class="input-item">
+        <ion-label class="label">Nom</ion-label>
+        <input class="input" type="text" placeholder="" name="nom" [(ngModel)]="formData.nom"/>
       </div>
-    <div class="input-item">
-      <ion-label class="label">Date de Sortie</ion-label>
-      <input class="input" type="date" placeholder=""/>
-    </div>
-    <div class="frame">
-      <button class="custom-btn btn-5"><span>Ajouter</span></button>
-
+  
+      <div class="input-item">
+        <ion-label class="label">Nombre de Poussins</ion-label>
+        <input class="input" type="text" placeholder="" name="nombrePoussins" [(ngModel)]="formData.nombrePoussins"/>
+      </div>
+  
+      <div class="input-item">
+        <ion-label class="label">Date d'Entrée</ion-label>
+        <input class="input" type="date" placeholder="" name="dateEntree" [(ngModel)]="formData.dateEntree"/>
+      </div>
+  
+      <div class="input-item">
+        <ion-label class="label">Date de Sortie</ion-label>
+        <input class="input" type="date" placeholder="" name="dateSortie" [(ngModel)]="formData.dateSortie"/>
+      </div>
+  
+      <div class="frame">
+        <button type="submit" class="custom-btn btn-5"><span>Ajouter</span></button>
       </div>
     </div>
-   </form>
+  </form>
+  
 </ion-content>
