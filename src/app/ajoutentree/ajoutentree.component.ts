@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class AjoutentreeComponent  implements OnInit {
   formData: any = {};
+  successMessage: string = ''; // Variable to hold the success message
 
   constructor(
     private userentriesService: UserentriesService,
@@ -18,17 +19,20 @@ export class AjoutentreeComponent  implements OnInit {
 
   addEntry() {
     const userId = 1; // Replace with the actual user ID
+  
+    if (!this.isFormValid()) {
+      console.error('Form is not valid. Please fill in all mandatory fields.');
+      return;
+    }
+  
     this.userentriesService.addEntry(userId, this.formData).subscribe(
       (response) => {
         console.log('Entry added successfully:', response);
-
-        // Show alert for confirmation
-        window.alert('Entrée ajoutée avec succès !');
-
-        // Navigate to '/entree' path after a delay (here, using setTimeout as an example)
+        this.successMessage = 'Entrée ajoutée avec succès !'; // Set success message
+  
         setTimeout(() => {
-          this.router.navigate(['/entree']);
-        }, 2000); // Change the delay as needed
+          this.router.navigate(['../entree']); // Ensure this navigation works
+        }, 2000); // Redirect after 2 seconds (adjust as needed)
       },
       (error) => {
         console.error('Error adding entry:', error);
@@ -36,6 +40,16 @@ export class AjoutentreeComponent  implements OnInit {
       }
     );
   }
+  
+  isFormValid(): boolean {
+    return (
+      this.formData.nom &&
+      this.formData.nombrePoussins &&
+      this.formData.dateEntree &&
+      this.formData.dateSortie
+    );
+  }
+  
 
   ngOnInit() {}
 

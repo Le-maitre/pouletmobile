@@ -6,32 +6,37 @@
   </div>
 </div>
 
+<!-- Update form template -->
 <ion-content>
-
-  <form >
+  <form (submit)="updateEntry()">
     <div class="main">
-    <div  class="input-item">
-      <ion-label class="label">Nom</ion-label>
-      <input class="input" type="text" placeholder="Lot1"/>
-    </div >
+      <div class="input-item">
+        <ion-label class="label">Nom</ion-label>
+      <!-- Update the ngModel without using the safe navigation operator -->
+<input class="input" type="text"  [(ngModel)]="entry.nom" [ngModelOptions]="{ standalone: true }" />
 
-    <div  class="input-item">
-      <ion-label class="label">Nombre de Poussins</ion-label>
-      <input class="input" type="text" placeholder="750"/>
-    </div >
-
-    <div class="input-item">
-      <ion-label class="label">Date d'Entrée</ion-label>
-      <input class="input" type="date" placeholder="25/11/2023"/>
-      </div>
-    <div class="input-item">
-      <ion-label class="label">Date de Sortie</ion-label>
-      <input class="input" type="date" placeholder="31/12/2023"/>
-    </div>
-    <div class="frame">
-      <button class="custom-btn btn-5"><span>Soumettre</span></button>
 
       </div>
+  
+      <div class="input-item">
+        <ion-label class="label">Nombre de Poussins</ion-label>
+        <input class="input" type="text" [(ngModel)]="entry.nombrePoussins"  [ngModelOptions]="{ standalone: true }"/>
+      </div>
+  
+      <div class="input-item">
+        <ion-label class="label">Date d'Entrée</ion-label>
+        <input class="input" type="date"  [(ngModel)]="entry.dateEntree"  [ngModelOptions]="{ standalone: true }"/>
+      </div>
+  
+      <div class="input-item">
+        <ion-label class="label">Date de Sortie</ion-label>
+        <input class="input" type="date"  [(ngModel)]="entry.dateSortie"  [ngModelOptions]="{ standalone: true }"/>
+      </div>
+  
+      <div class="frame">
+        <button type="submit" class="custom-btn btn-5" [routerLink]="['../entree']"><span>Modifier</span></button>
+      </div>
     </div>
-   </form>
+  </form>
 </ion-content>
+

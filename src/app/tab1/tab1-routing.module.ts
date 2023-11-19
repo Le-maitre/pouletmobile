@@ -40,6 +40,7 @@ import { ModifiermortComponent } from '../modifiermort/modifiermort.component';
 import { DetailalerteComponent } from '../detailalerte/detailalerte.component';
 import { DemarrageComponent } from '../demarrage/demarrage.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -54,7 +55,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'poussin',
+    path: 'poussin/:id',
     component: PoussinComponent,
   },
   {
@@ -182,7 +183,7 @@ const routes: Routes = [
     component: DetailtacheComponent,
   },
   {
-    path: 'modifierentree',
+    path: 'modifierentree/:id',
     component: ModifierentreeComponent,
   },
   {
