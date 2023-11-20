@@ -59,7 +59,7 @@ const routes: Routes = [
     component: PoussinComponent,
   },
   {
-    path: 'detail',
+    path: 'poussin/:id/detail',
     component: DetailComponent,
   },
   {

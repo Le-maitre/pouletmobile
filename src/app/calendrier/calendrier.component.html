@@ -1,3 +1,13 @@
-<p>
-  calendrier works!
-</p>
+<div class="calendar-header">
+  <h1>{{ getCurrentMonth() }}</h1>
+</div>
+
+<div class="calendar-wrapper">
+  <div class="calendar-days">
+    <div class="day-label" *ngFor="let day of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">{{ day }}</div>
+  </div>
+  
+  <div class="calendar-body">
+    <mwl-calendar-month-view [viewDate]="viewDate" [events]="events"></mwl-calendar-month-view>
+  </div>
+</div>
