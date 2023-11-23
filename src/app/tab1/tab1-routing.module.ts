@@ -63,19 +63,19 @@ const routes: Routes = [
     component: DetailComponent,
   },
   {
-    path: 'bilan',
+    path: 'poussin/:id/bilan',
     component: BilanComponent,
   },
   {
-    path: 'gestion',
+    path: 'poussin/:id/gestion',
     component: GestionComponent,
   },
   {
-    path: 'detailbilan',
+    path: '7detailbilan',
     component: DetailbilanComponent,
   },
   {
-    path: 'rapport',
+    path: 'poussin/:id/rapport',
     component: RapportComponent,
   },
   {
@@ -167,7 +167,7 @@ const routes: Routes = [
     component: CalendrierComponent,
   },
   {
-    path: 'ajoutbilan',
+    path: 'poussin/:id/ajoutbilan',
     component: AjoutbilanComponent,
   },
   {
