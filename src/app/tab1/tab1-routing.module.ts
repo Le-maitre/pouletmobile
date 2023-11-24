@@ -65,15 +65,21 @@ const routes: Routes = [
   {
     path: 'poussin/:id/bilan',
     component: BilanComponent,
+    children: [
+      {
+        path: 'detailbilan/:bilanId',
+        component: DetailbilanComponent
+      }
+    ]
   },
   {
     path: 'poussin/:id/gestion',
     component: GestionComponent,
   },
-  {
-    path: '7detailbilan',
-    component: DetailbilanComponent,
-  },
+  // {
+  //   path: 'detailbilan/:id',
+  //   component: DetailbilanComponent,
+  // },
   {
     path: 'poussin/:id/rapport',
     component: RapportComponent,
